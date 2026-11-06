@@ -1,18 +1,18 @@
-class MyObject {
-    MyObject() {
+class MyObject{
+    MyObject(){
         System.out.println("Object is created.");
     }
-    void display() {
+    void display(){
         System.out.println("Object is being used.");
     }
     @Override
-    protected void finalize() throws Throwable {
+    protected void finalize() throws Throwable{
         System.out.println("Garbage collector is reclaiming an object.");
     }
 }
 
-public class Object {
- public static void main(String[] args) {
+public class Object{
+ public static void main(String[] args){
         System.out.println(" Object Creation ");
         MyObject obj1 = new MyObject();
         MyObject obj2 = new MyObject();
